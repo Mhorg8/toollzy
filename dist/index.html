@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toolzy</title>
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- remix icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-Nunito">
+    <!-- header section start here -->
+    <header class="fixed top-0 left-0 right-0 w-full z-50">
+      <div class="container py-2 flex items-center justify-between w-full">
+        <!-- logo -->
+        <div class="logo z-30">
+          <a href="#home" class="font-extrabold text-white text-3xl logo"
+            >T<span class="text-light-color">00</span>LZY</a
+          >
+        </div>
+        <!-- hamburger icon -->
+        <div id="hamburger-btn" class="block md:hidden flex-1 text-end z-30">
+          <i
+            class="ri-menu-3-fill font-bold text-3xl text-white cursor-pointer"
+          ></i>
+        </div>
+        <!-- mobile menu -->
+        <nav
+          id="mobile-menu"
+          class="mobile-menu absolute top-0 right-0 w-[90%] h-[100vh] bg-dark-color"
+        >
+          <ul class="nav-list md:flex items-center gap-x-5 hidden">
+            <li class="nav-item"><a href="#" class="nav-link">Todo App</a></li>
+            <li class="nav-item relative have-dropdown">
+              <a href="#" class="nav-link"> Pomodoro App</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Weather App</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sign-up</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navbar -->
+        <nav>
+          <!-- large menu -->
+          <ul class="nav-list md:flex items-center gap-x-5 hidden">
+            <li class="nav-item"><a href="#" class="nav-link">Todo App</a></li>
+            <li class="nav-item relative have-dropdown">
+              <a href="#" class="nav-link"> Pomodoro App</a>
+              <ul class="dropdown">
+                <li
+                  id="Pomodoro-times"
+                  class="nav-link cursor-pointer text-dark-primary"
+                  value="15"
+                >
+                  15 Min
+                </li>
+                <li
+                  id="Pomodoro-times"
+                  class="nav-link cursor-pointer text-dark-primary"
+                  value="25"
+                >
+                  25 Min
+                </li>
+                <li
+                  id="Pomodoro-times"
+                  class="nav-link cursor-pointer text-dark-primary"
+                  value="55"
+                >
+                  55 Min
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Weather App</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login / Sign-Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header section finish here -->
+    <main id="main" class="bg-dark-primary w-full min-h-[100vh]">
+      <!-- landing section start here -->
+      <section id="home">
+        <!-- this section for slider about apps -->
+          <h1>2</h1>
+      </section>
+      <!-- landing section finish here -->
+    </main>
+
+    <!-- custom js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
