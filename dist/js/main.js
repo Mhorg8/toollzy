@@ -6,24 +6,31 @@ hamburgerBtn.addEventListener('click', () => {
     mobileMenuEl.classList.toggle('open-menu');
 })
 
-// swiper 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
+// handle header to fixed
+const headerEl = document.querySelector('header');
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+document.addEventListener('scroll', () => {
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    if (window.scrollY > 10) {
+        headerEl.classList.add('fixed')
+    } else {
+        headerEl.classList.remove('fixed')
+    }
+})
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
+
+// handle hover effect on toolboxes
+
+const toolBoxesEl = document.querySelectorAll('.tool-box');
+const toolDescribtionEl = document.querySelectorAll('.tool-describtion');
+
+
+toolBoxesEl.forEach((box, i) => {
+    box.addEventListener('mouseover', () => {
+        toolDescribtionEl[i].classList.add('show-description')
+    })
+
+    box.addEventListener('mouseleave', () => {
+        toolDescribtionEl[i].classList.remove('show-description')
+    })
+})

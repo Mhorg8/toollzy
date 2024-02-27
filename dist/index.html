@@ -19,18 +19,13 @@
     <!-- swiper cdn -->
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="font-Nunito">
+  <body class="font-Nunito bg-dark-primary relative">
     <!-- header section start here -->
-<<<<<<< Updated upstream
-    <header class="fixed top-0 left-0 right-0 w-full z-50">
-      <div class="container py-2 flex items-center justify-between w-full">
-=======
     <header class="w-full font-Nunito">
       <div
         id="header"
         class="container py-2 flex items-center justify-between w-full"
       >
->>>>>>> Stashed changes
         <!-- logo -->
         <div class="logo z-30">
           <a href="#home" class="font-extrabold text-white text-3xl logo"
@@ -108,17 +103,14 @@
     <!-- header section finish here -->
     <main id="main" class="bg-dark-primary w-full min-h-[100vh]">
       <!-- landing section start here -->
-      <section id="home">
+      <section id="home" class="mt-16 bg-dark-primary">
         <!-- this section for slider about apps -->
-<<<<<<< Updated upstream
-          <h1>2</h1>
-=======
         <div class="container grid grid-cols-1 md:grid-cols-2">
           <!-- this is for image content -->
-          <div class="image-content w-full h-[50vh]">
+          <div class="image-content w-full md:w-[80%] md:h-[50vh] h-full">
             <div class="img-container w-full h-full rounded-xl">
               <img
-                class="rounded-xl w-full h-full object-contain"
+                class="w-full h-full object-cover md:object-fill rounded-2xl shadow-lg"
                 src="../images/undraw_Multitasking_re_ffpb.png"
                 alt=""
               />
@@ -142,7 +134,10 @@
               various tasks and generally enhance your productivity.
             </p>
 
-            <div class="items-start justify-start w-full mt-5 read-more-box">
+            <div
+              class="flex items-center justify-start gap-x-5 w-full mt-5 read-more-box"
+            >
+              <button class="btn btn-primary">Try Now</button>
               <a
                 href="#"
                 class="text-primary-color font-semibold text-base read-more"
@@ -157,32 +152,45 @@
 
         <!-- tools -->
         <div
-          class="container mt-20 grid mx-auto grid-cols-1 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 place-items-center mb-20 gap-y-5 md:gap-x-7"
+          class="container mt-20 grid mx-auto grid-cols-1 gap-y-12 md:gap-y-0 sm:grid-cols-2 sm:gap-x-5 md:grid-cols-3 lg:grid-cols-4 place-items-center mb-20 md:gap-x-7"
         >
           <div
-            class="bg-light-color md:h-32 md:w-full w-full h-32 rounded-xl flex items-center justify-center"
+            class="tool-box bg-light-color md:w-full w-full h-40 rounded-xl flex items-center justify-center relative"
           >
-            Weather App
+            <!-- tools describtion -->
+            <div class="tool-describtion">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
           </div>
           <div
-            class="bg-gray md:h-32 md:w-full w-full h-32 rounded-xl flex items-center justify-center"
+            class="tool-box bg-gray md:w-full w-full h-40 rounded-xl flex items-center justify-center relative"
           >
-            Pomodoro App
+            <!-- tools describtion -->
+            <div class="tool-describtion">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
           </div>
           <div
-            class="bg-white md:h-32 md:w-full w-full h-32 rounded-xl flex items-center justify-center"
+            class="tool-box bg-white md:w-full w-full h-40 rounded-xl flex items-center justify-center relative"
           >
-            Todo App
+            <!-- tools describtion -->
+            <div class="tool-describtion">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
           </div>
           <div
-            class="bg-dark-color md:h-32 md:w-full w-full h-32 rounded-xl flex items-center justify-center"
+            class="tool-box bg-dark-color md:w-full w-full h-40 rounded-xl flex items-center justify-center relative"
           >
-            Music Player
+            <!-- tools describtion -->
+            <div class="tool-describtion">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
           </div>
         </div>
->>>>>>> Stashed changes
       </section>
       <!-- landing section finish here -->
+
+      <section class="mt-16 bg-primary-color"></section>
     </main>
 
     <!-- custom js -->
