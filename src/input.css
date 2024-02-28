@@ -165,8 +165,13 @@
   .feature-box {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.355);
   }
+  .feature-box:hover {
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.355);
+
+    animation: scale 1s 0.2s linear;
+  }
   .feature-box:nth-child(1) {
-    background-color: rebeccapurple;
+    background: url("../images/music/player.jpg");
   }
   .feature-box:nth-child(2) {
     background-color: red;
@@ -175,12 +180,35 @@
     background-color: green;
   }
   .feature-box:nth-child(4) {
-    background-color: yellow;
+    position: relative;
+    z-index: 2;
+  }
+  .feature-box:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: blur(50px);
   }
   .feature-box:nth-child(5) {
     background-color: pink;
   }
   .feature-box:nth-child(6) {
-    background-color: orangered;
+  }
+
+  .blob {
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+    border-radius: 50%;
+    background: var(--gradient);
+    filter: blur(50px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
   }
 }

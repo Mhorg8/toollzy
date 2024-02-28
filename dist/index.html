@@ -165,35 +165,164 @@
           </h2>
           <!-- container of images  -->
           <div
-            class="grid grid-cols-12 grid-row-3 md:grid-rows-2 md:gap-5 gap-10 w-full h-[50vh]"
+            class="grid grid-cols-12 grid-row-3 md:grid-rows-2 gap-5 w-full h-full md:max-h-[50vh] relative z-20"
           >
+            <div class="blob"></div>
             <!-- box1 -->
             <div
-              class="col-span-6 md:col-span-3 row-span-1 w-full h-full rounded-2xl feature-box"
-            ></div>
-            <!-- box1 -->
-
-            <div
-              class="col-span-6 md:col-span-3 row-span-1 w-full h-full rounded-2xl feature-box"
-            ></div>
-            <!-- box1 -->
-
-            <div
-              class="col-span-12 md:col-span-6 row-span-3 md:row-span-2 w-full h-40 md:h-full rounded-2xl feature-box"
-            ></div>
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <img
+                src="../images/multi.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+                alt=""
+              />
+            </div>
             <!-- box1 -->
 
             <div
-              class="col-span-6 md:col-span-3 row-span-1 w-full h-full rounded-2xl feature-box"
-            ></div>
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <img
+                src="../images/pexels-karolina-grabowska-4476635.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-span-12 md:col-span-6 row-span-3 bg-opacity-0 md:row-span-2 flex items-center justify-center w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <h3
+                class="text-lg text-justify md:text-xl font-semibold text-white w-full p-3 md:p-4 leading-6 md:leading-8"
+              >
+                One of the vital issues in any society is recognizing people's
+                needs and providing appropriate tools and solutions to meet
+                these needs. This matter is not only crucial for improving
+                individuals' quality of life but also for the development and
+                advancement of society as a whole.
+              </h3>
+            </div>
             <!-- box1 -->
 
             <div
-              class="col-span-6 md:col-span-3 row-span-1 w-full h-full rounded-2xl feature-box"
-            ></div>
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <img
+                src="../images/todo List.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+                alt=""
+              />
+            </div>
+            <!-- box1 -->
+
+            <div
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <img
+                src="../images/pexels-polina-tankilevitch-7382447.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </section>
+      <!-- landing section finish here -->
+
+      <!-- plans section start here -->
+      <section class="flex flex-col gap-y-14">
+        <!-- Weather app -->
+        <div id="Weather" class="container w-full max-h-[40vh] h-full mt-20">
+          <h3 class="mt-12 mb-6 text-3xl font-bold text-white">
+            Weather app how work's ?
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 h-full w-full bg-light-color rounded-2xl"
+          >
+            <!-- weather app info -->
+            <div class="flex items-center justify-start w-full h-full">
+              <p
+                class="text-white text-lg max-w-[500px] px-10 py-10 md:leading-7 leading-6"
+              >
+                Inside this tool, you can access the weather for the current day
+                as well as for past and future days. This tool allows you to
+                have all the important weather information within one
+                application.
+              </p>
+            </div>
+            <!-- weather app Image -->
+            <div class="max-h-[40vh] h-full w-full">
+              <img
+                class="w-full h-full object-cover rounded-e-2xl"
+                src="../images/pexels-karolina-grabowska-4476635.jpg"
+                alt="weather-app"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- todo app -->
+        <div id="todo" class="container w-full max-h-[40vh] h-full mt-20">
+          <h3 class="mt-12 mb-6 text-3xl font-bold text-white">
+            Todo app how work's ?
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 h-full w-full bg-gray rounded-2xl"
+          >
+            <!-- weather app info -->
+            <div class="flex items-center justify-start w-full h-full order-2">
+              <p
+                class="text-white text-lg max-w-[550px] px-14 py-10 md:leading-7 leading-6"
+              >
+                These days, setting goals has become one of the most common
+                habits among people. And since it's necessary to have their list
+                of goals with you all the time, you can use this simple and very
+                practical tool for that purpose.
+              </p>
+            </div>
+            <!-- weather app Image -->
+            <div class="max-h-[40vh] h-full w-full order-1">
+              <img
+                class="w-full h-full object-cover rounded-s-2xl"
+                src="../images/todo List.jpg"
+                alt="todo-app"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Pmodoro app -->
+        <div id="todo" class="container w-full max-h-[40vh] h-full mt-20">
+          <h3 class="mt-12 mb-6 text-3xl font-bold text-white">
+            Pomodoro app how work's ?
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 h-full w-full bg-light-color rounded-2xl"
+          >
+            <!-- weather app info -->
+            <div class="flex items-center justify-start w-full h-full order-1">
+              <p
+                class="text-white text-lg max-w-[550px] px-14 py-10 md:leading-7 leading-6"
+              >
+                These days, focusing on work has become more difficult in the
+                modern world. Social media is one of the major reasons for lack
+                of focus. With our tool, you can set specific times where no
+                distractions occur, allowing you to concentrate.
+              </p>
+            </div>
+            <!-- weather app Image -->
+            <div class="max-h-[40vh] h-full w-full order-2">
+              <img
+                class="w-full h-full object-cover rounded-e-2xl"
+                src="../images/social-media.jpg"
+                alt="todo-app"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- plans section start here -->
     </main>
 
     <!-- custom js -->
