@@ -34,7 +34,7 @@
           >
         </div>
         <!-- hamburger icon -->
-        <div id="hamburger-btn" class="block md:hidden flex-1 text-end z-30">
+        <div id="hamburger-btn" class="block md:hidden flex-1 text-end z-50">
           <i
             class="ri-menu-3-fill font-bold text-3xl text-white cursor-pointer"
           ></i>
@@ -42,7 +42,7 @@
         <!-- mobile menu -->
         <nav
           id="mobile-menu"
-          class="mobile-menu absolute top-0 right-0 w-[90%] h-[100vh] bg-dark-color"
+          class="mobile-menu absolute top-0 z-40 right-0 w-[90%] h-[100vh] bg-dark-color"
         >
           <ul class="nav-list md:flex items-center gap-x-5 hidden">
             <li class="nav-item"><a href="#" class="nav-link">Todo App</a></li>
@@ -108,6 +108,7 @@
         <div
           class="container grid grid-cols-12 grid-rows-3 justify-items-center h-[50vh] w-full gap-4"
         >
+          <!-- large box -->
           <div
             class="col-span-12 relative row-span-2 md:col-span-10 md:row-span-3 w-full rounded-2xl md:px-10 px-5"
           >
@@ -119,15 +120,15 @@
               />
             </div>
             <div
-              class="flex flex-col items-start justify-center h-full gap-y-5 absolute z-20"
+              class="flex flex-col w-full h-full items-start justify-center gap-y-5 absolute left-0 z-20 px-4"
             >
               <h1
-                class="text-[42px] text-white font-extrabold leading-10 w-[700px] select-none"
+                class="md:text-[38px] w-full max-w-[600px] text-white font-extrabold md:leading-10 leading-6 text-[24px] select-none"
               >
                 With a set of Toolzy, have all the tools you need for the day in
                 one place.
               </h1>
-              <p class="w-[500px] text-white">
+              <p class="text-white w-full leading-4 max-w-[]">
                 Integrated tools that provide all the necessary tools in one
                 place can truly make life easier. With these tools, you can
                 improve various tasks and generally enhance your productivity.
@@ -135,20 +136,59 @@
               <a href="#" class="btn">Try now</a>
             </div>
           </div>
+          <!-- second box -->
           <div
-            class="bg-gray col-span-4 row-span-1 md:col-span-2 md:row-span-1 w-full rounded-2xl"
+            class="col-span-4 row-span-1 md:col-span-2 md:row-span-1 w-full rounded-2xl box relative"
           >
-            2
+            <h3>Weather</h3>
           </div>
+          <!-- third box -->
           <div
-            class="bg-dark-color col-span-4 row-span-1 md:col-span-2 md:row-span-1 w-full rounded-2xl"
+            class="col-span-4 row-span-1 md:col-span-2 md:row-span-1 w-full rounded-2xl box relative"
           >
-            3
+            <h3>Todo App</h3>
           </div>
+          <!-- forth box -->
           <div
-            class="bg-primary-color col-span-4 row-span-1 md:col-span-2 md:row-span-1 w-full rounded-2xl"
+            class="col-span-4 row-span-1 md:col-span-2 md:row-span-1 w-full rounded-2xl box relative"
           >
-            4
+            <h3>Pomodoro</h3>
+          </div>
+        </div>
+
+        <!-- second container in landing page -->
+        <div class="container">
+          <h2 class="mt-12 mb-6 text-3xl font-bold text-white">
+            How are Works ?
+          </h2>
+          <!-- container of images  -->
+          <div
+            class="grid grid-cols-12 grid-row-3 md:grid-rows-2 md:gap-5 gap-10 w-full h-[50vh]"
+          >
+            <!-- box1 -->
+            <div
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-full rounded-2xl feature-box"
+            ></div>
+            <!-- box1 -->
+
+            <div
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-full rounded-2xl feature-box"
+            ></div>
+            <!-- box1 -->
+
+            <div
+              class="col-span-12 md:col-span-6 row-span-3 md:row-span-2 w-full h-40 md:h-full rounded-2xl feature-box"
+            ></div>
+            <!-- box1 -->
+
+            <div
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-full rounded-2xl feature-box"
+            ></div>
+            <!-- box1 -->
+
+            <div
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-full rounded-2xl feature-box"
+            ></div>
           </div>
         </div>
       </section>

@@ -10,11 +10,7 @@
   --black: #808080;
   --gray: #8d99ae;
   --border-radius: 10px;
-  --gradient: linear-gradient(
-    90deg,
-    #0963be 0%,
-    #c63995 100%
-  );
+  --gradient: linear-gradient(90deg, #0963be 0%, #c63995 100%);
 }
 @layer components {
   .btn {
@@ -28,6 +24,12 @@
     font-weight: 14px;
     font-weight: bold;
     color: var(--white);
+    transition: 1s all linear;
+    transition-delay: 0.1s;
+  }
+  .btn:hover {
+    background: linear-gradient(90deg, #c63995 0%, #0963be 100%);
+    animation: fade-in 1s linear;
   }
   .logo {
     animation: move-in 1.2s linear;
@@ -86,6 +88,7 @@
   }
   .have-dropdown:hover .dropdown {
     display: flex;
+    z-index: 100;
   }
   .mobile-menu {
     display: none;
@@ -108,60 +111,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: var(--gray);
     row-gap: 20px;
   }
   .mobile-menu ul li a {
     color: var(--white);
-  }
-
-  .tool-describtion {
-    opacity: 0;
-    transition: 1s;
-    width: 100%;
-    padding: 5px 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: 800;
-    font-size: 1.2rem;
-    color: var(--primary-color);
-  }
-
-  .tool-describtion.show-description {
-    opacity: 1;
-  }
-
-  .tool-box {
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    position: relative;
-  }
-
-  .tool-box:hover {
-    animation: scale 1s 0.1s linear;
-  }
-  .tool-box:nth-child(1) {
-    background: url(../images/undraw_Multitasking_re_ffpb.png) center center /
-      cover no-repeat;
-  }
-  .tool-box:nth-child(2) {
-    background: url(../images/undraw_Dev_productivity_re_fylf.png) center center /
-      cover no-repeat;
-  }
-
-  .tool-box:nth-child(3) {
-    background: url(../images/undraw_Predictive_analytics_re_wxt8.png) center
-      center / cover no-repeat;
-  }
-
-  .tool-box:nth-child(4) {
-    background: url(../images/undraw_Software_engineer_re_tnjc.png) center
-      center / cover no-repeat;
   }
 
   @keyframes scale {
@@ -174,5 +128,59 @@
     100% {
       transform: scale(1.02);
     }
+  }
+  .box:nth-child(2) {
+    background: url(../images/undraw_Software_engineer_re_tnjc.png) center
+      center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .box:nth-child(3) {
+    background: url(../images/undraw_Multitasking_re_ffpb.png) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .box:nth-child(4) {
+    background: url(../images/undraw_Predictive_analytics_re_wxt8.png) center
+      center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .box {
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.355);
+  }
+  .box h3 {
+    display: none;
+  }
+  .box:hover h3 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+  }
+  .feature-box {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.355);
+  }
+  .feature-box:nth-child(1) {
+    background-color: rebeccapurple;
+  }
+  .feature-box:nth-child(2) {
+    background-color: red;
+  }
+  .feature-box:nth-child(3) {
+    background-color: green;
+  }
+  .feature-box:nth-child(4) {
+    background-color: yellow;
+  }
+  .feature-box:nth-child(5) {
+    background-color: pink;
+  }
+  .feature-box:nth-child(6) {
+    background-color: orangered;
   }
 }
