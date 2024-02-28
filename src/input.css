@@ -3,28 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --white: #fefefa;
-  --light-color: #ffc300;
-  --primary-color: #003566;
-  --dark-primary: #001d3d;
-  --dark-color: #000814;
+  --white: #edf2f4;
+  --light-color: #ef233c;
+  --primary-color: #d90429;
+  --dark-color: #2b2d42;
   --black: #808080;
-  --gray: #fefefa;
+  --gray: #8d99ae;
   --border-radius: 10px;
+  --gradient: linear-gradient(
+    90deg,
+    #0963be 0%,
+    #c63995 100%
+  );
 }
 @layer components {
   .btn {
-    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
     height: 40px;
-    background: var(--light-color);
+    background: var(--gradient);
+    border-radius: 20px;
+    font-weight: 14px;
+    font-weight: bold;
     color: var(--white);
-    border-radius: 10px;
-    font-weight: 500;
-    transition: all 0.45s ease;
-  }
-  .btn:hover {
-    color: var(--light-color);
-    background: var(--white);
   }
   .logo {
     animation: move-in 1.2s linear;
