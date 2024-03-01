@@ -50,7 +50,7 @@
               <a href="#" class="nav-link"> Pomodoro App</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Weather App</a>
+              <a href="../dist/weatherApp.html" class="nav-link">Weather App</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Login</a>
@@ -92,7 +92,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Weather App</a>
+              <a href="../dist/weatherApp.html" class="nav-link">Weather App</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Login / Sign-Up</a>
@@ -130,7 +130,7 @@
                 With a set of Toolzy, have all the tools you need for the day in
                 one place.
               </h1>
-              <p class="text-white w-full leading-4 max-w-[]">
+              <p class="text-white w-full md:leading-5 max-w-[500px]">
                 Integrated tools that provide all the necessary tools in one
                 place can truly make life easier. With these tools, you can
                 improve various tasks and generally enhance your productivity.
@@ -194,7 +194,7 @@
               class="col-span-12 md:col-span-6 row-span-3 bg-opacity-0 md:row-span-2 flex items-center justify-center w-full h-40 md:h-full rounded-2xl feature-box"
             >
               <h3
-                class="text-lg text-justify md:text-xl font-semibold text-white w-full p-3 md:p-4 leading-6 md:leading-8"
+                class="text-lg text-justify md:text-xl font-semibold text-white w-full p-3 md:p-4 leading-5 md:leading-8"
               >
                 One of the vital issues in any society is recognizing people's
                 needs and providing appropriate tools and solutions to meet
@@ -231,17 +231,20 @@
       <!-- landing section finish here -->
 
       <!-- plans section start here -->
-      <section class="flex flex-col gap-y-14">
+      <section class="flex flex-col gap-y-10 mb-10">
         <!-- Weather app -->
-        <div id="Weather" class="container w-full max-h-[40vh] h-full mt-20">
+        <div
+          id="Weather"
+          class="container w-full md:max-h-[50vh] h-full mt-20 shadow-md"
+        >
           <h3 class="mt-12 mb-6 text-3xl font-bold text-white">
             Weather app how work's ?
           </h3>
           <div
-            class="grid grid-cols-1 md:grid-cols-2 h-full w-full bg-light-color rounded-2xl"
+            class="grid grid-cols-1 md:grid-cols-2 w-full my-10 bg-light-color rounded-2xl"
           >
             <!-- weather app info -->
-            <div class="flex items-center justify-start w-full h-full">
+            <div class="flex items-center justify-start w-full md:h-full">
               <p
                 class="text-white text-lg max-w-[500px] px-10 py-10 md:leading-7 leading-6"
               >
@@ -252,9 +255,9 @@
               </p>
             </div>
             <!-- weather app Image -->
-            <div class="max-h-[40vh] h-full w-full">
+            <div class="max-h-[40vh] md:h-full md:max-h-[40vh] w-full order-1">
               <img
-                class="w-full h-full object-cover rounded-e-2xl"
+                class="w-full h-full object-cover md:rounded-e-2xl xm:rounded-b-2xl"
                 src="../images/pexels-karolina-grabowska-4476635.jpg"
                 alt="weather-app"
               />
@@ -263,7 +266,10 @@
         </div>
 
         <!-- todo app -->
-        <div id="todo" class="container w-full max-h-[40vh] h-full mt-20">
+        <div
+          id="todo"
+          class="container w-full md:max-h-[50vh] h-full mt-12 shadow-md"
+        >
           <h3 class="mt-12 mb-6 text-3xl font-bold text-white">
             Todo app how work's ?
           </h3>
@@ -282,9 +288,9 @@
               </p>
             </div>
             <!-- weather app Image -->
-            <div class="max-h-[40vh] h-full w-full order-1">
+            <div class="max-h-[40vh] md:h-full md:max-h-[40vh] w-full order-1">
               <img
-                class="w-full h-full object-cover rounded-s-2xl"
+                class="w-full h-full object-cover md:rounded-s-2xl xm:rounded-b-2xl"
                 src="../images/todo List.jpg"
                 alt="todo-app"
               />
@@ -293,7 +299,10 @@
         </div>
 
         <!-- Pmodoro app -->
-        <div id="todo" class="container w-full max-h-[40vh] h-full mt-20">
+        <div
+          id="todo"
+          class="container w-full md:max-h-[50vh] h-full mt-12 shadow-md"
+        >
           <h3 class="mt-12 mb-6 text-3xl font-bold text-white">
             Pomodoro app how work's ?
           </h3>
@@ -312,9 +321,9 @@
               </p>
             </div>
             <!-- weather app Image -->
-            <div class="max-h-[40vh] h-full w-full order-2">
+            <div class="max-h-[40vh] md:h-full md:max-h-[40vh] w-full order-2">
               <img
-                class="w-full h-full object-cover rounded-e-2xl"
+                class="w-full h-full object-cover md:rounded-e-2xl xm:rounded-b-2xl"
                 src="../images/social-media.jpg"
                 alt="todo-app"
               />
@@ -325,6 +334,101 @@
       <!-- plans section start here -->
     </main>
 
+    <footer class="bg-gray">
+      <div
+        class="container flex md:flex-row flex-col flex-wrap items-top justify-around w-full h-full py-5 gap-y-5 mt-24"
+      >
+        <!-- social icons -->
+        <div class="flex flex-col items-start justify-start">
+          <h3 class="font-bold text-left text-white text-2xl my-5">
+            Our Social Links
+          </h3>
+          <ul
+            class="social container flex items-start justify-start gap-x-3 w-full p-0"
+          >
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-instagram-line text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="text-3xl"
+                ><i class="ri-telegram-line text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-github-fill text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-youtube-line text-white social-link"></i
+              ></a>
+            </li>
+          </ul>
+          <div>
+            <h3
+              class="font-bold text-left text-white text-2xl my-5 social-link"
+            >
+              About Us
+            </h3>
+          </div>
+        </div>
+        <!-- contact us  -->
+        <div>
+          <div class="flex flex-col items-start justify-start">
+            <h3 class="font-bold text-white text-2xl my-5">Contact Us</h3>
+            <ul
+              class="social container flex flex-col items-start justify-start p-0"
+            >
+              <li class="social-item text-base text-white">
+                <span class="font-thin">Phone:</span>
+                <a href="#" class="social-link font-semibold">0933 40 555 39</a>
+              </li>
+
+              <li class="social-item text-base font-bold text-white">
+                <span class="font-thin">Email:</span>
+                <a href="#" class="social-link"
+                  >mohammadhoseinalireza081@gmail.com</a
+                >
+              </li>
+
+              <li class="social-item text-base font-bold text-white">
+                <span class="font-thin">Location:</span>
+                <a href="#" class="social-link">Iran Tehran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- newsletter -->
+        <div>
+          <div class="flex flex-col items-start justify-start w-full">
+            <h3 class="font-bold text-white text-2xl my-5 text-center wf">
+              Newsletter
+            </h3>
+            <form action="saveUserEmail">
+              <div class="newletter-container w-full relative">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="user-email px-4 py-2 rounded-xl outline-none shadow-md w-full max-w-[500px]"
+                />
+                <button
+                  type="submit"
+                  class="submit-btn bg-primary-color py-2 px-4 rounded-e-xl absolute -right-5"
+                >
+                  <i class="ri-arrow-right-line text-white font-semibold"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- custom js -->
     <script src="js/main.js"></script>
   </body>

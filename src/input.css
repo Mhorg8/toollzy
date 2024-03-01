@@ -211,4 +211,18 @@
     transform: translate(-50%, -50%);
     z-index: -1;
   }
+
+  .social-link {
+    transition: color 0.45s ease;
+    cursor: pointer;
+  }
+  .social-link:hover {
+    color: var(--light-color);
+  }
+
+  /* weather app */
+
+  #weather-img {
+    animation: fade-in 0.3s 0.7s linear;
+  }
 }
