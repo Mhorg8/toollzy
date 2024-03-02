@@ -195,9 +195,6 @@
   .feature-box:nth-child(5) {
     background-color: pink;
   }
-  .feature-box:nth-child(6) {
-  }
-
   .blob {
     max-width: 400px;
     width: 100%;
@@ -222,7 +219,16 @@
 
   /* weather app */
 
-  #weather-img {
-    animation: fade-in 0.3s 0.7s linear;
+  #weather-app {
+    animation: move-in 0.45s linear;
   }
+
+  .history-container {
+    display: none;
+  }
+
+  .history-container.show-history {
+    display: block;
+  }
+
 }
