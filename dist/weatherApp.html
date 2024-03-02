@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- remix icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-dark-color">
+    <!-- header section start here -->
+    <header class="w-full font-Nunito py-3">
+      <div
+        id="header"
+        class="container py-2 flex items-center justify-between w-full"
+      >
+        <!-- logo -->
+        <div class="logo z-30">
+          <a href="../dist/index.html" class="font-extrabold text-white text-3xl logo"
+            >T<span class="text-light-color">00</span>LZY</a
+          >
+        </div>
+        <!-- hamburger icon -->
+        <div id="hamburger-btn" class="block md:hidden flex-1 text-end z-50">
+          <i
+            class="ri-menu-3-fill font-bold text-3xl text-white cursor-pointer"
+          ></i>
+        </div>
+        <!-- mobile menu -->
+        <nav
+          id="mobile-menu"
+          class="mobile-menu absolute top-0 z-40 right-0 w-[90%] h-[100vh] bg-dark-color"
+        >
+          <ul class="nav-list md:flex items-center gap-x-5 hidden">
+            <li class="nav-item"><a href="#" class="nav-link">Todo App</a></li>
+            <li class="nav-item relative have-dropdown">
+              <a href="#" class="nav-link"> Pomodoro App</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Weather App</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sign-up</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navbar -->
+        <nav>
+          <!-- large menu -->
+          <ul class="nav-list md:flex items-center gap-x-5 hidden">
+            <li class="nav-item"><a href="#" class="nav-link">Todo App</a></li>
+            <li class="nav-item relative have-dropdown">
+              <a href="#" class="nav-link"> Pomodoro App</a>
+              <ul class="dropdown">
+                <li
+                  id="Pomodoro-times"
+                  class="nav-link cursor-pointer text-dark-primary"
+                  value="15"
+                >
+                  15 Min
+                </li>
+                <li
+                  id="Pomodoro-times"
+                  class="nav-link cursor-pointer text-dark-primary"
+                  value="25"
+                >
+                  25 Min
+                </li>
+                <li
+                  id="Pomodoro-times"
+                  class="nav-link cursor-pointer text-dark-primary"
+                  value="55"
+                >
+                  55 Min
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Weather App</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login / Sign-Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header section finish here -->
+
+    <main>
+      <div
+        id="weather-app"
+        class="container flex flex-col w-full max-w-[400px] h-[600px] bg-white rounded-2xl mt-10"
+      >
+        <!-- this is for heading  -->
+        <div class="flex justify-between items-center w-full h-16 relative">
+          <h2 class="text-xl font-bold text-gray logo">
+            <span class="text-primary-color">Weather</span> App
+          </h2>
+          <i
+            id="weather-hamburger"
+            class="ri-menu-line text-2xl text-gray font-bold"
+          ></i>
+
+          <div
+            id="history-container"
+            class="history-container absolute w-[150px] shadow-md z-30 h-full min-h-[40vh] px-2 py-2 bg-gray right-0 top-12 rounded-2xl"
+          >
+            <ul
+              id="history-container-menu"
+              class="h-full w-full flex items-center justify-center flex-col gap-y-5"
+            ></ul>
+          </div>
+        </div>
+        <!-- this is for weather images -->
+        <div class="flex-1">
+          <div
+            class="img-container w-full h-full flex flex-col items-center justify-center"
+          >
+            <div class="relative">
+              <input
+                class="w-full py-2 outline-none border border-primary-color rounded-xl px-4 shadow-md"
+                type="text"
+                name=""
+                id="userCity"
+                placeholder="Enter your city"
+              />
+              <button
+                id="checkWeather"
+                class="absolute right-0 top-1/2 -translate-y-1/2 bg-primary-color py-2 rounded-xl rounded-s-none px-2 text-white font-bold"
+              >
+                Check
+              </button>
+            </div>
+            <img
+              id="weather-img"
+              class="md:w-[60%] w-[50%] md:h-[60%] h-[50%] object-contain"
+              src=""
+              alt=""
+            />
+
+            <h2 id="temp" class="text-[38px] font-bold text-primary-color">
+              20°C
+            </h2>
+            <p id="city" class="text-xl font-semibold"></p>
+          </div>
+        </div>
+        <!-- this is for weather details -->
+        <div class="h-16 flex items-center justify-between">
+          <div class="flex flex-col">
+            <img
+              id="weather-img"
+              class="w-10 h-10"
+              src="../images/humidity.png"
+              alt=""
+            />
+            <div>
+              <p>Humidity : <span class="humidity" id="humidity">20%</span></p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <img class="w-10 h-10" src="../images/wind.png" alt="" />
+            <div>
+              <p>Wind: <span id="wind">10km/h</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray">
+      <div
+        class="container flex md:flex-row flex-col flex-wrap items-top justify-around w-full h-full py-5 gap-y-5 mt-24"
+      >
+        <!-- social icons -->
+        <div class="flex flex-col items-start justify-start">
+          <h3 class="font-bold text-left text-white text-2xl my-5">
+            Our Social Links
+          </h3>
+          <ul
+            class="social container flex items-start justify-start gap-x-3 w-full p-0"
+          >
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-instagram-line text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="text-3xl"
+                ><i class="ri-telegram-line text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-github-fill text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-youtube-line text-white social-link"></i
+              ></a>
+            </li>
+          </ul>
+          <div>
+            <h3
+              class="font-bold text-left text-white text-2xl my-5 social-link"
+            >
+              About Us
+            </h3>
+          </div>
+        </div>
+        <!-- contact us  -->
+        <div>
+          <div class="flex flex-col items-start justify-start">
+            <h3 class="font-bold text-white text-2xl my-5">Contact Us</h3>
+            <ul
+              class="social container flex flex-col items-start justify-start p-0"
+            >
+              <li class="social-item text-base text-white">
+                <span class="font-thin">Phone:</span>
+                <a href="#" class="social-link font-semibold">0933 40 555 39</a>
+              </li>
+
+              <li class="social-item text-base font-bold text-white">
+                <span class="font-thin">Email:</span>
+                <a href="#" class="social-link"
+                  >mohammadhoseinalireza081@gmail.com</a
+                >
+              </li>
+
+              <li class="social-item text-base font-bold text-white">
+                <span class="font-thin">Location:</span>
+                <a href="#" class="social-link">Iran Tehran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- newsletter -->
+        <div>
+          <div class="flex flex-col items-start justify-start w-full">
+            <h3 class="font-bold text-white text-2xl my-5 text-center wf">
+              Newsletter
+            </h3>
+            <form action="saveUserEmail" id="newsletter-form">
+              <div class="newletter-container w-full relative">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="user-email px-4 py-2 rounded-xl outline-none shadow-md w-full max-w-[500px]"
+                />
+                <button
+                  type="submit"
+                  class="submit-btn bg-primary-color py-2 px-4 rounded-e-xl absolute -right-5"
+                >
+                  <i class="ri-arrow-right-line text-white font-semibold"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/weather.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

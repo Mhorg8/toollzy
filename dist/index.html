@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <!-- remix icon -->
     <link
       rel="stylesheet"
@@ -19,10 +20,13 @@
     <!-- swiper cdn -->
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="font-Nunito">
+  <body class="font-Roboto bg-dark-color relative">
     <!-- header section start here -->
-    <header class="fixed top-0 left-0 right-0 w-full z-50">
-      <div class="container py-2 flex items-center justify-between w-full">
+    <header class="w-full font-Nunito py-3">
+      <div
+        id="header"
+        class="container py-2 flex items-center justify-between w-full"
+      >
         <!-- logo -->
         <div class="logo z-30">
           <a href="#home" class="font-extrabold text-white text-3xl logo"
@@ -30,7 +34,7 @@
           >
         </div>
         <!-- hamburger icon -->
-        <div id="hamburger-btn" class="block md:hidden flex-1 text-end z-30">
+        <div id="hamburger-btn" class="block md:hidden flex-1 text-end z-50">
           <i
             class="ri-menu-3-fill font-bold text-3xl text-white cursor-pointer"
           ></i>
@@ -38,15 +42,15 @@
         <!-- mobile menu -->
         <nav
           id="mobile-menu"
-          class="mobile-menu absolute top-0 right-0 w-[90%] h-[100vh] bg-dark-color"
+          class="mobile-menu absolute top-0 z-40 right-0 w-[90%] h-[100vh] bg-dark-color"
         >
           <ul class="nav-list md:flex items-center gap-x-5 hidden">
-            <li class="nav-item"><a href="#" class="nav-link">Todo App</a></li>
+            <li class="nav-item"><a href="../dist/todoApp.html" class="nav-link">Todo App</a></li>
             <li class="nav-item relative have-dropdown">
               <a href="#" class="nav-link"> Pomodoro App</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Weather App</a>
+              <a href="../dist/weatherApp.html" class="nav-link">Weather App</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Login</a>
@@ -60,7 +64,7 @@
         <nav>
           <!-- large menu -->
           <ul class="nav-list md:flex items-center gap-x-5 hidden">
-            <li class="nav-item"><a href="#" class="nav-link">Todo App</a></li>
+            <li class="nav-item"><a href="../dist/todoApp.html" class="nav-link">Todo App</a></li>
             <li class="nav-item relative have-dropdown">
               <a href="#" class="nav-link"> Pomodoro App</a>
               <ul class="dropdown">
@@ -88,7 +92,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Weather App</a>
+              <a href="../dist/weatherApp.html" class="nav-link">Weather App</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Login / Sign-Up</a>
@@ -98,15 +102,333 @@
       </div>
     </header>
     <!-- header section finish here -->
-    <main id="main" class="bg-dark-primary w-full min-h-[100vh]">
+    <main id="main" class="bg-dark-color w-full min-h-[100vh]">
       <!-- landing section start here -->
-      <section id="home">
-        <!-- this section for slider about apps -->
-          <h1>2</h1>
+      <section class="">
+        <!-- first container in landing page -->
+
+        <div
+          class="container grid grid-cols-12 grid-rows-3 justify-items-center h-[50vh] w-full gap-4"
+        >
+          <!-- large box -->
+          <div
+            class="col-span-12 relative row-span-2 md:col-span-10 md:row-span-3 w-full rounded-2xl md:px-10 px-5"
+          >
+            <div class="w-full h-full right-0 absolute z-10">
+              <img
+                class="w-full h-full object-right object-fill rounded-2xl"
+                src="../images/hero.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="flex flex-col w-full h-full items-start justify-center gap-y-5 absolute left-0 z-20 px-4"
+            >
+              <h1
+                class="md:text-[38px] w-full max-w-[600px] text-white font-extrabold md:leading-10 leading-6 text-[24px] select-none"
+              >
+                With a set of Toolzy, have all the tools you need for the day in
+                one place.
+              </h1>
+              <p class="text-white w-full md:leading-5 max-w-[500px]">
+                Integrated tools that provide all the necessary tools in one
+                place can truly make life easier. With these tools, you can
+                improve various tasks and generally enhance your productivity.
+              </p>
+              <a href="#" class="btn">Try now</a>
+            </div>
+          </div>
+          <!-- second box -->
+          <div
+            class="col-span-4 row-span-1 md:col-span-2 md:row-span-1 w-full rounded-2xl box relative"
+          >
+            <h3>Weather</h3>
+          </div>
+          <!-- third box -->
+          <div
+            class="col-span-4 row-span-1 md:col-span-2 md:row-span-1 w-full rounded-2xl box relative"
+          >
+            <h3>Todo App</h3>
+          </div>
+          <!-- forth box -->
+          <div
+            class="col-span-4 row-span-1 md:col-span-2 md:row-span-1 w-full rounded-2xl box relative"
+          >
+            <h3>Pomodoro</h3>
+          </div>
+        </div>
+
+        <!-- second container in landing page -->
+        <div class="container">
+          <h2 class="mt-12 mb-6 text-3xl font-bold text-white">
+            How are Works ?
+          </h2>
+          <!-- container of images  -->
+          <div
+            class="grid grid-cols-12 grid-row-3 md:grid-rows-2 gap-5 w-full h-full md:max-h-[50vh] relative z-20"
+          >
+            <div class="blob"></div>
+            <!-- box1 -->
+            <div
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <img
+                src="../images/multi.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+                alt=""
+              />
+            </div>
+            <!-- box1 -->
+
+            <div
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <img
+                src="../images/pexels-karolina-grabowska-4476635.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-span-12 md:col-span-6 row-span-3 bg-opacity-0 md:row-span-2 flex items-center justify-center w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <h3
+                class="text-lg text-justify md:text-xl font-semibold text-white w-full p-3 md:p-4 leading-5 md:leading-8"
+              >
+                One of the vital issues in any society is recognizing people's
+                needs and providing appropriate tools and solutions to meet
+                these needs. This matter is not only crucial for improving
+                individuals' quality of life but also for the development and
+                advancement of society as a whole.
+              </h3>
+            </div>
+            <!-- box1 -->
+
+            <div
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <img
+                src="../images/todo List.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+                alt=""
+              />
+            </div>
+            <!-- box1 -->
+
+            <div
+              class="col-span-6 md:col-span-3 row-span-1 w-full h-40 md:h-full rounded-2xl feature-box"
+            >
+              <img
+                src="../images/pexels-polina-tankilevitch-7382447.jpg"
+                class="w-full h-full object-cover rounded-2xl"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </section>
       <!-- landing section finish here -->
+
+      <!-- plans section start here -->
+      <section class="flex flex-col gap-y-10 mb-10">
+        <!-- Weather app -->
+        <div
+          id="Weather"
+          class="container w-full md:max-h-[50vh] h-full mt-20 shadow-md"
+        >
+          <h3 class="mt-12 mb-6 text-3xl font-bold text-white">
+            Weather app how work's ?
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 w-full my-10 bg-light-color rounded-2xl"
+          >
+            <!-- weather app info -->
+            <div class="flex items-center justify-start w-full md:h-full">
+              <p
+                class="text-white text-lg max-w-[500px] px-10 py-10 md:leading-7 leading-6"
+              >
+                Inside this tool, you can access the weather for the current day
+                as well as for past and future days. This tool allows you to
+                have all the important weather information within one
+                application.
+              </p>
+            </div>
+            <!-- weather app Image -->
+            <div class="max-h-[40vh] md:h-full md:max-h-[40vh] w-full order-1">
+              <img
+                class="w-full h-full object-cover md:rounded-e-2xl xm:rounded-b-2xl"
+                src="../images/pexels-karolina-grabowska-4476635.jpg"
+                alt="weather-app"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- todo app -->
+        <div
+          id="todo"
+          class="container w-full md:max-h-[50vh] h-full mt-12 shadow-md"
+        >
+          <h3 class="mt-12 mb-6 text-3xl font-bold text-white">
+            Todo app how work's ?
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 h-full w-full bg-gray rounded-2xl"
+          >
+            <!-- weather app info -->
+            <div class="flex items-center justify-start w-full h-full order-2">
+              <p
+                class="text-white text-lg max-w-[550px] px-14 py-10 md:leading-7 leading-6"
+              >
+                These days, setting goals has become one of the most common
+                habits among people. And since it's necessary to have their list
+                of goals with you all the time, you can use this simple and very
+                practical tool for that purpose.
+              </p>
+            </div>
+            <!-- weather app Image -->
+            <div class="max-h-[40vh] md:h-full md:max-h-[40vh] w-full order-1">
+              <img
+                class="w-full h-full object-cover md:rounded-s-2xl xm:rounded-b-2xl"
+                src="../images/todo List.jpg"
+                alt="todo-app"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Pmodoro app -->
+        <div
+          id="todo"
+          class="container w-full md:max-h-[50vh] h-full mt-12 shadow-md"
+        >
+          <h3 class="mt-12 mb-6 text-3xl font-bold text-white">
+            Pomodoro app how work's ?
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 h-full w-full bg-light-color rounded-2xl"
+          >
+            <!-- weather app info -->
+            <div class="flex items-center justify-start w-full h-full order-1">
+              <p
+                class="text-white text-lg max-w-[550px] px-14 py-10 md:leading-7 leading-6"
+              >
+                These days, focusing on work has become more difficult in the
+                modern world. Social media is one of the major reasons for lack
+                of focus. With our tool, you can set specific times where no
+                distractions occur, allowing you to concentrate.
+              </p>
+            </div>
+            <!-- weather app Image -->
+            <div class="max-h-[40vh] md:h-full md:max-h-[40vh] w-full order-2">
+              <img
+                class="w-full h-full object-cover md:rounded-e-2xl xm:rounded-b-2xl"
+                src="../images/social-media.jpg"
+                alt="todo-app"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- plans section start here -->
     </main>
 
+    <footer class="bg-gray">
+      <div
+        class="container flex md:flex-row flex-col flex-wrap items-top justify-around w-full h-full py-5 gap-y-5 mt-24"
+      >
+        <!-- social icons -->
+        <div class="flex flex-col items-start justify-start">
+          <h3 class="font-bold text-left text-white text-2xl my-5">
+            Our Social Links
+          </h3>
+          <ul
+            class="social container flex items-start justify-start gap-x-3 w-full p-0"
+          >
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-instagram-line text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="text-3xl"
+                ><i class="ri-telegram-line text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-github-fill text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-youtube-line text-white social-link"></i
+              ></a>
+            </li>
+          </ul>
+          <div>
+            <h3
+              class="font-bold text-left text-white text-2xl my-5 social-link"
+            >
+              About Us
+            </h3>
+          </div>
+        </div>
+        <!-- contact us  -->
+        <div>
+          <div class="flex flex-col items-start justify-start">
+            <h3 class="font-bold text-white text-2xl my-5">Contact Us</h3>
+            <ul
+              class="social container flex flex-col items-start justify-start p-0"
+            >
+              <li class="social-item text-base text-white">
+                <span class="font-thin">Phone:</span>
+                <a href="#" class="social-link font-semibold">0933 40 555 39</a>
+              </li>
+
+              <li class="social-item text-base font-bold text-white">
+                <span class="font-thin">Email:</span>
+                <a href="#" class="social-link"
+                  >mohammadhoseinalireza081@gmail.com</a
+                >
+              </li>
+
+              <li class="social-item text-base font-bold text-white">
+                <span class="font-thin">Location:</span>
+                <a href="#" class="social-link">Iran Tehran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- newsletter -->
+        <div>
+          <div class="flex flex-col items-start justify-start w-full">
+            <h3 class="font-bold text-white text-2xl my-5 text-center wf">
+              Newsletter
+            </h3>
+            <form action="saveUserEmail">
+              <div class="newletter-container w-full relative">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="user-email px-4 py-2 rounded-xl outline-none shadow-md w-full max-w-[500px]"
+                />
+                <button
+                  type="submit"
+                  class="submit-btn bg-primary-color py-2 px-4 rounded-e-xl absolute -right-5"
+                >
+                  <i class="ri-arrow-right-line text-white font-semibold"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- custom js -->
     <script src="js/main.js"></script>
   </body>
