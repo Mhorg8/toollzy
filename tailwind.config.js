@@ -7,20 +7,19 @@ module.exports = {
       padding: '2rem'
     },
     colors: {
-      'light-color': '#ffd60a',
-      'primary-color': '#ffc300',
-      'dark-primary': '#003566',
-      'dark-color': '#001d3d',
+      'light-color': '#ef233c',
+      'primary-color': '#d90429',
+      'dark-color': '#2b2d42',
       'black': '#000814',
-      'gray': '#808080',
-      'white': '#FEFEFA'
+      'gray': '#8d99ae',
+      'white': '#edf2f4'
     },
     fontFamily: {
-      "Nunito": ["Nunito", 'sans-serif']
+      "Poppins": ["Poppins", 'sans-serif']
     },
     extend: {
       fontFamily: {
-        "Nunito": ["Nunito", 'sans-serif']
+        "Poppins": ["Poppins", 'sans-serif']
       },
     },
   },

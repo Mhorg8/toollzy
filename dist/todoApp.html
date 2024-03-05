@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOOLZY - Todo App</title>
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- remix icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-Roboto bg-dark-color">
+    <!-- header section start here -->
+    <header class="w-full font-Nunito py-3">
+      <div
+        id="header"
+        class="container py-2 flex items-center justify-between w-full"
+      >
+        <!-- logo -->
+        <div class="logo z-30">
+          <a href="#home" class="font-extrabold text-white text-3xl logo"
+            >T<span class="text-light-color">00</span>LZY</a
+          >
+        </div>
+        <!-- hamburger icon -->
+        <div id="hamburger-btn" class="block md:hidden flex-1 text-end z-50">
+          <i
+            class="ri-menu-3-fill font-bold text-3xl text-white cursor-pointer"
+          ></i>
+        </div>
+        <!-- mobile menu -->
+        <nav
+          id="mobile-menu"
+          class="mobile-menu absolute top-0 z-40 right-0 w-[90%] h-[100vh] bg-dark-color"
+        >
+          <ul class="nav-list md:flex items-center gap-x-5 hidden">
+            <li class="nav-item">
+              <a href="../dist/todoApp.html" class="nav-link">Todo App</a>
+            </li>
+            <li class="nav-item relative have-dropdown">
+              <a href="./pomodoro.html" class="nav-link"> Pomodoro App</a>
+            </li>
+            <li class="nav-item">
+              <a href="../dist/weatherApp.html" class="nav-link">Weather App</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sign-up</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navbar -->
+        <nav>
+          <!-- large menu -->
+          <ul class="nav-list md:flex items-center gap-x-5 hidden">
+            <li class="nav-item"><a href="./todoApp.html" class="nav-link">Todo App</a></li>
+            <li class="nav-item relative have-dropdown">
+              <a href="./pomodoro.html" class="nav-link"> Pomodoro App</a>
+              <ul class="dropdown">
+                <li
+                  id="Pomodoro-times"
+                  class="nav-link cursor-pointer text-dark-primary"
+                  value="15"
+                >
+                  15 Min
+                </li>
+                <li
+                  id="Pomodoro-times"
+                  class="nav-link cursor-pointer text-dark-primary"
+                  value="25"
+                >
+                  25 Min
+                </li>
+                <li
+                  id="Pomodoro-times"
+                  class="nav-link cursor-pointer text-dark-primary"
+                  value="55"
+                >
+                  55 Min
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../dist/weatherApp.html" class="nav-link">Weather App</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login / Sign-Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header section finish here -->
+    <main>
+      <!-- todo app -->
+      <section class="mt-10">
+        <div
+          class="container w-[400px] h-[600px] flex flex-col items-start justify-start bg-white rounded-2xl py-5"
+        >
+          <h3
+            class="font-bold text-2xl text-center w-full mb-3 text-dark-color"
+          >
+            Todo list
+          </h3>
+          <!-- user action for add new todo -->
+          <div class="flex relative w-full mb-10">
+            <input
+              id="user-input"
+              type="text"
+              class="w-full border-none outline-none px-5 py-2 rounded-2xl shadow-md focus:shadow-lg"
+              placeholder="Add new Todo"
+            />
+            <button
+              id="add-todo"
+              class="bg-dark-color absolute right-0 rounded-s-none rounded-e-2xl py-2 px-2 text-white font-bold shadow-md"
+            >
+              ADD
+            </button>
+          </div>
+          <!-- todo container -->
+          <div
+            class="todo-list flex flex-col gap-y-4 overflow-hidden w-full h-full p-0"
+          >
+            <!-- todo  -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-gray">
+      <div
+        class="container flex md:flex-row flex-col flex-wrap items-top justify-around w-full h-full py-5 gap-y-5 mt-24"
+      >
+        <!-- social icons -->
+        <div class="flex flex-col items-start justify-start">
+          <h3 class="font-bold text-left text-white text-2xl my-5">
+            Our Social Links
+          </h3>
+          <ul
+            class="social container flex items-start justify-start gap-x-3 w-full p-0"
+          >
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-instagram-line text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="text-3xl"
+                ><i class="ri-telegram-line text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-github-fill text-white social-link"></i
+              ></a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link text-3xl"
+                ><i class="ri-youtube-line text-white social-link"></i
+              ></a>
+            </li>
+          </ul>
+          <div>
+            <h3
+              class="font-bold text-left text-white text-2xl my-5 social-link"
+            >
+              About Us
+            </h3>
+          </div>
+        </div>
+        <!-- contact us  -->
+        <div>
+          <div class="flex flex-col items-start justify-start">
+            <h3 class="font-bold text-white text-2xl my-5">Contact Us</h3>
+            <ul
+              class="social container flex flex-col items-start justify-start p-0"
+            >
+              <li class="social-item text-base text-white">
+                <span class="font-thin">Phone:</span>
+                <a href="#" class="social-link font-semibold">0933 40 555 39</a>
+              </li>
+
+              <li class="social-item text-base font-bold text-white">
+                <span class="font-thin">Email:</span>
+                <a href="#" class="social-link"
+                  >mohammadhoseinalireza081@gmail.com</a
+                >
+              </li>
+
+              <li class="social-item text-base font-bold text-white">
+                <span class="font-thin">Location:</span>
+                <a href="#" class="social-link">Iran Tehran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- newsletter -->
+        <div>
+          <div class="flex flex-col items-start justify-start w-full">
+            <h3 class="font-bold text-white text-2xl my-5 text-center wf">
+              Newsletter
+            </h3>
+            <form action="saveUserEmail">
+              <div class="newletter-container w-full relative">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="user-email px-4 py-2 rounded-xl outline-none shadow-md w-full max-w-[500px]"
+                />
+                <button
+                  type="submit"
+                  class="submit-btn bg-primary-color py-2 px-4 rounded-e-xl absolute -right-5"
+                >
+                  <i class="ri-arrow-right-line text-white font-semibold"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- custom js -->
+    <script src="js/todo.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
